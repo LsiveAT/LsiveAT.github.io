@@ -5,8 +5,8 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+      min-height: 100vh;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)
     }
     header {
 
@@ -39,16 +39,34 @@
       text-align: center;
     }
 
-  </style>
-  <style>
     .container {
       text-align:center;
     }
-    .container IMG {
+    .container img {
       display:inline-block;
       vertical-align:middle;
     }
-    
+    .section{
+      color: #fff;
+    }
+
+    .icon{
+      position: absolute;
+      right: 4%;
+    }
+
+    .welcome{
+      text-shadow:
+      0px 0px 5px rgba(255,255,255,0.7),
+      0px 0px 10px rgba(255,255,255,0.7),
+      0px 0px 18px rgba(255,255,255,0.7);
+    }
+    .welcome1{
+      text-shadow: 
+      0px 0px 5px rgba(255,255,255,0.5),
+      0px 0px 10px rgba(255,255,255,0.5),
+      0px 0px 18px rgba(255,255,255,0.5);
+    }
   </style>
 </head>
 <body>
@@ -61,21 +79,22 @@
     <a href="#">Contact Us</a>
   </nav>
 
-  <section>
-    <h1>Welcome </h1>
-    <h2>Welcome to Know it unbelievable's know, this is the official website of Tick Studio where you can download our minecraft texture pack!</h2>
-  <img src="icon.jpg" alt="icon">
-<div class="container">
-  <IMG src="KIUK.jpg" alt="KIUK">
-    <h1>Contact Us</h1>
-    <h2>Contact Us use QQ 3129392318@qq.com ,thanks</h2>
-    <h1>about</h1>
-    <h2>We will update our homemade minecraft texture in real-time! thanks</h2>
-  <IMG src="minecraft.jpg" alt="minecraft">
-    <h1>NEW TEXTURE PACK IN MINECRAFT 1.12.2!</h1>
-    <h2>This texture pack is called "bagpacker" and can be used in 1.12.2. It provides rendering of some materials and maintains synchronization with Bedlock 0.15.0.1 materials</h2>
-  <IMG src="plastic2.jpg" alt="playtime">
-  <a href="http://github.com/LsiveAT/LsiveAT.github.io/releases/latest/download/BagPacker1.12.2.zip">click here to download 001</a>
+  <section class="section">
+    <h1 class="welcome">Welcome </h1>
+    <h2 class="welcome1">Welcome to Know it unbelievable's know, this is the official website of Tick Studio where you can download our minecraft texture pack!</h2>
+    <img src="https://lsiveat.github.io/icon.jpg" alt="icon" class="icon">
+    <div class="container">
+      <img src="https://lsiveat.github.io/KIUK.jpg" alt="KIUK">
+      <h1>Contact Us</h1>
+      <h2>Contact Us use QQ 3129392318@qq.com ,thanks</h2>
+      <h1>about</h1>
+      <h2>We will update our homemade minecraft texture in real-time! thanks</h2>
+      <img src="https://lsiveat.github.io/minecraft.jpg" alt="minecraft">
+      <h1>NEW TEXTURE PACK IN MINECRAFT 1.12.2!</h1>
+      <h2>This texture pack is called "bagpacker" and can be used in 1.12.2. It provides rendering of some materials and maintains synchronization with Bedlock 0.15.0.1 materials</h2>
+      <img src="https://lsiveat.github.io/plastic2.jpg" alt="playtime">
+      <a href="http://github.com/LsiveAT/LsiveAT.github.io/releases/latest/download/BagPacker1.12.2.zip">click here to download 001</a>
+    </div>
   </section>
   <footer>
     <p>&copy; 2023 TICK K I U K .</p>
