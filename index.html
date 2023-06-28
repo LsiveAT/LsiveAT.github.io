@@ -6,7 +6,9 @@
     body {
       font-family: Arial, sans-serif;
       min-height: 100vh;
-      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      padding: 0;
+      margin: 0;
     }
     header {
 
@@ -47,12 +49,15 @@
       vertical-align:middle;
     }
     .section{
+      /* display: flex;
+      flex-wrap: wrap; */
       color: #fff;
     }
 
     .icon{
       position: absolute;
       right: 4%;
+      z-index: -1;
     }
 
     .welcome{
@@ -66,6 +71,49 @@
       0px 0px 5px rgba(255,255,255,0.5),
       0px 0px 10px rgba(255,255,255,0.5),
       0px 0px 18px rgba(255,255,255,0.5);
+    }
+
+    .download{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      margin-top: 20px;
+      width: 20vh;
+      height: 8vh;
+      font-size: 1.5vh;
+      border: 1px solid #fff;
+      box-shadow: 0px 0px 5px rgba(220,220,220,0.7),
+      0px 0px 10px rgba(220,220,220,0.7),
+      0px 0px 15px rgba(220,220,220,0.7),
+      inset 0px 0px 3px rgba(220,220,220,0.7),
+      inset 0px 0px 6px rgba(220,220,220,0.7);
+      border-radius: 2.5vh;
+      overflow: hidden;
+      position: relative;
+      transition: all 0.3s;
+    }
+
+    .download::before{
+      content: '';
+      transform: translateY(100%);
+      position: absolute;
+      z-index: -1;
+      margin: auto;
+      width: calc(20vh + 1px);
+      height: calc(8vh + 1px);
+      background-color: aliceblue;
+      transition: all 0.5s;
+    }
+    .download:hover{
+      color: #1b2735;
+      text-shadow: 
+      0px 0px 5px rgba(80,80,80,0.5),
+      0px 0px 10px rgba(80,80,80,0.5),
+      0px 0px 18px rgba(80,80,80,0.5);
+    }
+    .download:hover::before{
+      transform: translateY(0);
     }
   </style>
 </head>
@@ -92,8 +140,8 @@
       <img src="https://lsiveat.github.io/minecraft.jpg" alt="minecraft">
       <h1>NEW TEXTURE PACK IN MINECRAFT 1.12.2!</h1>
       <h2>This texture pack is called "bagpacker" and can be used in 1.12.2. It provides rendering of some materials and maintains synchronization with Bedlock 0.15.0.1 materials</h2>
-      <img src="https://lsiveat.github.io/plastic2.jpg" alt="playtime">
-      <a href="http://github.com/LsiveAT/LsiveAT.github.io/releases/latest/download/BagPacker1.12.2.zip">click here to download 001</a>
+      <img src="https://lsiveat.github.io/plastic2.jpg" alt="playtime" class="playtime">
+      <a class="download" href="http://github.com/LsiveAT/LsiveAT.github.io/releases/latest/download/BagPacker1.12.2.zip">click here to download 001</a>
     </div>
   </section>
   <footer>
@@ -101,3 +149,4 @@
   </footer>
 </body>
 </html>
+
